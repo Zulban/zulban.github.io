@@ -19,18 +19,21 @@ Options:
 
 from app import create_app
 from utilities import docopt
+from flask_frozen import Freezer
 
 def main(args):
+    
+    app=create_app()
         
     if args["web"]:
-        app=create_app()
         
         app.run(host=args["--host"],
                 port=int(args["--port"]),
                 threaded=True)        
     
     elif args["freeze"]:
-        raise NotImplemented
+        freezer = Freezer(app)
+        freezer.freeze()
     
     print("Done.")
 
