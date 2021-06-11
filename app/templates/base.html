@@ -16,6 +16,14 @@
     
   </head>
   <body>
+  
+			<div class="navigation-bar">
+					<span class="navigation-bar-link"><a href="/home">About</a></span>
+					<span class="navigation-bar-link"><a href="/faq">FAQ</a></span>
+					<span class="navigation-bar-link"><a href="https://weather.gc.ca/">weather.gc.ca</a></span>
+			</div>
+			
+			<img class="meteohack-banner-full" src="{{ url_for('static',filename='images/banner1.png') }}">
 		
 		<div class="container">
 			{% block content %}{% endblock %}    

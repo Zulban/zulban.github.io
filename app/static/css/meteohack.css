@@ -11,6 +11,37 @@ body {
     color: rgb(51,51,51);
 }
 
+a {
+  text-decoration: none;
+}
+
+.meteohack-banner-full{
+    width: 100%;
+}
+
+.navigation-bar {
+  width:100%;
+  display:inline-block;
+  background-color: #202020;
+  border-color: #080808;
+  border-radius: 4px;
+  overflow: auto;
+  padding-left:30px;
+  padding-right:30px;
+  margin-bottom:12px;
+}
+
+.navigation-bar-link>a {
+  color: #9d9d9d;
+  font-size: 24px;
+  padding:20px;
+  float: left;
+}
+
+.navigation-bar-link>a:hover {
+  color: #BDBDBD;
+}
+
 h1 {
     font-size: 36px;
 }
