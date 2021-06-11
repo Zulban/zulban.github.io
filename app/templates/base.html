@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% if title %}
+    <title>{{title}}</title>
+    {% else %}
+    <title>Meteohack</title>
+    {% endif %}
+    <link href="{{ url_for('static',filename='css/meteohack.css') }}" rel="stylesheet">
+    
+    <link rel="icon" 
+      type="image/png" 
+      href="static/img/favicon.ico">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  </head>
+  <body>
+		
+		<div class="container">
+			{% block content %}{% endblock %}    
+		</div>
+		
+  </body>
+</html>
