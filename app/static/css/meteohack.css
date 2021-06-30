@@ -9,6 +9,7 @@ body {
     background-color: #F7F7F7;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: rgb(51,51,51);
+    margin: 0px;
 }
 
 a {
@@ -21,14 +22,11 @@ a {
 
 .navigation-bar {
   width:100%;
-  display:inline-block;
   background-color: #202020;
   border-color: #080808;
-  border-radius: 4px;
   overflow: auto;
   padding-left:30px;
   padding-right:30px;
-  margin-bottom:12px;
 }
 
 .navigation-bar-link>a {

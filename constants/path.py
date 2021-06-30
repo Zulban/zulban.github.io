@@ -1,3 +1,4 @@
 import os.path
 
-PROJECT_ROOT=os.path.dirname(os.path.realpath(__file__))
+d=os.path.dirname
+PROJECT_ROOT=d(d(os.path.realpath(__file__)))+"/"

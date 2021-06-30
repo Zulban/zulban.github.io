@@ -19,6 +19,7 @@ Options:
 
 from app import create_app
 from utilities import docopt
+from constants import PROJECT_ROOT
 from flask_frozen import Freezer
 
 def main(args):
@@ -32,8 +33,12 @@ def main(args):
                 threaded=True)        
     
     elif args["freeze"]:
+        app.config["FREEZER_IGNORE_MIMETYPE_WARNINGS"]=True
+        app.config["FREEZER_DESTINATION"]=args["--freeze"]
         freezer = Freezer(app)
         freezer.freeze()
+        build_folder=PROJECT_ROOT+"app/build/"
+        print("Froze Flask app: "+build_folder)
     
     print("Done.")
 
