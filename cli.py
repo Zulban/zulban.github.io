@@ -34,11 +34,11 @@ def main(args):
     
     elif args["freeze"]:
         app.config["FREEZER_IGNORE_MIMETYPE_WARNINGS"]=True
-        app.config["FREEZER_DESTINATION"]=args["--freeze"]
+        output=PROJECT_ROOT+"/"+args["--freeze"]
+        app.config["FREEZER_DESTINATION"]=output
         freezer = Freezer(app)
         freezer.freeze()
-        build_folder=PROJECT_ROOT+"app/build/"
-        print("Froze Flask app: "+build_folder)
+        print("Froze Flask app: "+output)
     
     print("Done.")
 
