@@ -11,7 +11,7 @@ Usage:
 Options:
     --host=<host>         Host. [default: localhost]
     --port=<port>         Port. [default: 5000]
-    --freeze=<folder>     Folder to dump all the static files for freeze. [default: build]
+    --freeze=<folder>     Folder to dump all the static files for freeze. [default: docs]
     
     -h --help             Show this screen.
     -v --version          Show version.

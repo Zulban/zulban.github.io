@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends language.iso+"/base.html" %}
 
 
 {% block content %}
@@ -7,13 +7,30 @@
 		
 <h1>FAQ</h1>
 
-<h3>What's a hackathon?</h3>
-<p>A <a href="https://en.wikipedia.org/wiki/Hackathon">hackathon</a> is a design sprint-like event in which computer programmers, graphic designers, interface designers, project managers, and others, often including domain experts, collaborate intensively on software projects. Usually a hackathon takes place over just a few days.</p>
+<h3>What is a hackathon?</h3>
+<p>A <a href="https://{{ language.iso }}.wikipedia.org/wiki/Hackathon">hackathon</a> is a design sprint-like event in which computer programmers, academics, graphic designers, interface designers, project managers, domain experts, and others collaborate intensively on software projects. Usually a hackathon takes place over just a few days.</p>
 <p>Many hackathon projects are abandoned or never submitted. That’s okay! Hackathons are about experimentation, learning, making fast prototypes, and meeting new people.</p>
 <p>Hackathons have mentors and experts to help participants, and a panel of judges to choose the winners.</p>
 
+<h3>What's the event schedule?</h3>
+<ul>
+    <li>The challenge will be announced on Friday, February 35th at noon, 12:00 EST.</li>
+    <li>The submission deadline is Sunday, February 37th at noon, 12:00 EST.</li>
+</ul>
+
 <h3>What tools can I use?</h3>
 <p>You can use any software tool or programming languages for your submission. It is recommended that you use open source tools, open standards, and cross platform solutions. This makes it easier for teams to work together, and for everyone to see your project results first-hand.</p>
+
+<h3>What data can I use?</h3>
+<p>You can use any publicly available meteorological data.</p>
+
+<p>We recommend all participants explore the data resources before the competition starts.</p>
+
+<ul>
+    <li>See the great <a href="https://eccc-msc.github.io/open-data/readme_{{ language.iso }}/">MSC open data technical documentation</a>.</li>
+    <li>Data on <a href="https://www.canada.ca/en/environment-climate-change/services/climate-change/canadian-centre-climate-services/display-download/advanced-tools.html">CCCS</a> is easy to explore.</li>
+    <li>Lots of raw data can be found on <a href="https://dd.meteo.gc.ca/">datamart</a>.</li>
+</ul>
 
 <h3>What is the format of the product participants will deliver?</h3>
 <p>To be considered for any prizes, each team must submit:</p>
@@ -58,14 +75,17 @@
 <h3>Can public servants win cash prizes?</h3>
 <p>No.</p>
 
+<h3>Is my project open source enough for the open source prize?</h3>
+<p>For this hackathon your project is considered open source if:</p>
+<ul>
+    <li>You chose an <a href="https://opensource.org/licenses">open source license</a> for your project.</li>
+    <li>An open source operating system like Linux/Ubuntu can run your software without installing or paying for any extra closed source projects.</li>
+    <li>All your source code is publicly available on a website like GitLab or GitHub without requiring a login.</li>
+</ul>
+<p>If this is still unclear, ask an event organizer.</p>
+
 <h3>Is this event free?</h3>
 <p>Yes. However you will need to register (for free) to submit a project and win a prize.</p>
-
-<h3>What's the event schedule?</h3>
-<ul>
-    <li>The challenge will be announced on Friday, February 35th at noon, 12:00 EST.</li>
-    <li>The submission deadline is Sunday, February 37th at noon, 12:00 EST.</li>
-</ul>
 
 <h1>Logistics</h1>
 
@@ -83,10 +103,12 @@
 <p>Your first point of contact should be on the <a href="https://discord.com/channels/859177105904107561/859177300301185078">Discord</a> channel. You can join <a href="https://discord.gg/M2xCqFsK">here</a>.</p>
 <p>See also:</p>
 <ul>
-    <li>The list of judges.</li>
-    <li>The list of mentors.</li>
+    <li>The list of <a href="/{{ year }}/{{ language.iso }}/judges.html">judges</a>.</li>
+    <li>The list of <a href="/{{ year }}/{{ language.iso }}/mentors.html">mentors</a>.</li>
 </ul>
-<p>Event organizer: Stuart Spence <code>stuart.spence@canada.ca</code></p>
+<p>Event organizer:</p>
+<p>Stuart Spence</p>
+<img class="email-image" src="/static/images/stuart-email.png">
 
 </div>
 {% endblock %}

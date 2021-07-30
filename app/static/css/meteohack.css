@@ -16,6 +16,10 @@ a {
   text-decoration: none;
 }
 
+.email-image {
+    height: 20px;
+}
+
 .meteohack-banner-full{
     width: 100%;
 }
@@ -67,6 +71,10 @@ h2 {
     background-color:  #5E2750;
     border-radius: 5px;
     color: #FFFFFF;
+}
+
+.panel {
+    padding-bottom: 40px;
 }
 
 .patreon-button {
