@@ -45,6 +45,7 @@ def main(args):
         output=PROJECT_ROOT+"/"+args["--freeze"]+"/"
         app.config["FREEZER_DESTINATION"]=output
         freezer = Freezer(app)
+        
         freezer.freeze()
         print("Froze Flask app: "+output)
         create_static_doc_files(output)
